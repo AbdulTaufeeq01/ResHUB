@@ -6,6 +6,24 @@ This is an AI-powered research assistant that answers questions about your docum
 
 **Think of it as a smart search engine for your documents.**
 
+### How It Works
+
+1. **Document Ingestion** - You add documents (PDFs, text files, etc.) to the system
+2. **Smart Indexing** - The AI breaks documents into chunks and creates embeddings (digital fingerprints) to understand content
+3. **Vector Database** - These embeddings are stored in a searchable database (Chroma)
+4. **Question Answering** - When you ask a question, the system:
+   - Searches for relevant document chunks
+   - Sends them to a local AI model
+   - Returns an answer with sources cited
+
+### Key Features
+
+- **Completely Offline** - Runs on your computer, no data sent to the cloud
+- **Multi-Agent Research** - 3 AI agents work together for complex questions
+- **Web Interface** - Easy-to-use Streamlit app (no coding needed)
+- **Source Citations** - Know exactly where answers come from
+- **Conversation History** - Track all your questions and answers
+
 ---
 
 ## Quick Start (3 Steps)
@@ -65,6 +83,31 @@ pip install -r requirements.txt
 
 ---
 
+## Technology Stack
+
+### AI & Machine Learning
+- **Ollama + Llama3** - Local AI language model (no cloud required)
+- **HuggingFace Embeddings** - Converts text to vector embeddings
+- **Chroma** - Vector database for semantic search
+- **LangChain** - Framework for building LLM applications
+- **LangGraph** - Multi-agent orchestration system
+
+### Frontend & Backend
+- **Streamlit** - Web interface (Python-based, no JavaScript needed)
+- **Python 3.9+** - Programming language
+
+### Why These Technologies?
+
+| Technology | Why We Use It |
+|------------|---------------|
+| **Ollama** | Runs AI locally (private, no internet needed) |
+| **Chroma** | Super fast semantic search on document chunks |
+| **LangChain** | Handles all the LLM complexity for us |
+| **LangGraph** | Lets multiple AI agents work together |
+| **Streamlit** | Fast web app development without web dev knowledge |
+
+---
+
 ## Project Structure
 
 ```
@@ -79,6 +122,14 @@ research_assistant/
 └── requirements.txt          # Python packages needed
 ```
 
+### What Each File Does
+
+- **app_streamlit.py** - The web app you interact with
+- **ingestion_build_index.py** - Reads your documents and creates the searchable index
+- **rag_qa.py** - Simple Q&A system for direct questions
+- **graph_multi_agent.py** - Advanced system using 3 AI agents for complex research
+- **config.py** - Settings like which AI model to use, how many search results to return
+
 ---
 
 ## Configuration
@@ -86,8 +137,9 @@ research_assistant/
 Edit `config.py` to customize settings:
 
 ```python
-OLLAMA_MODEL_NAME = "llama3"      # Change AI model
-RETRIEVER_TOP_K = 5                # How many sources to search
+OLLAMA_MODEL_NAME = "llama3"      # Change AI model (llama3, mistral, etc)
+RETRIEVER_TOP_K = 5                # How many document chunks to search
+EMBEDDING_MODEL = "all-MiniLM-L6-v2"  # Embedding model to use
 ```
 
 ---
