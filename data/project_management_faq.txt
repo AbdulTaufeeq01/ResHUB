@@ -1,0 +1,275 @@
+# Project Management FAQ
+
+## Frequently Asked Questions
+
+### Project Planning
+
+**Q: What is a project kickoff meeting?**
+A: A project kickoff meeting is the first formal meeting held with all project stakeholders to:
+- Define project scope and objectives
+- Introduce team members and their roles
+- Establish communication channels
+- Review timeline and milestones
+- Identify risks and constraints
+- Align expectations
+
+**Q: How do we define project scope?**
+A: Project scope defines what is included and excluded from the project. It should include:
+- Project objectives and goals
+- Deliverables
+- Major milestones
+- Boundaries (what's NOT included)
+- Assumptions and constraints
+- Resource requirements
+
+**Q: What's the difference between a project and a program?**
+A: - **Project**: Temporary endeavor with specific start/end date and defined deliverables
+- **Program**: Collection of related projects managed together to achieve strategic benefits
+- **Portfolio**: All projects and programs in an organization
+
+### Timeline and Scheduling
+
+**Q: How should we create a project timeline?**
+A: Use these steps:
+1. Break project into tasks
+2. Estimate task duration
+3. Identify task dependencies
+4. Create Gantt chart
+5. Add buffers for risks
+6. Review with team
+7. Get stakeholder approval
+
+**Q: What is a critical path?**
+A: The critical path is the longest sequence of dependent tasks that determines minimum project duration. Delays on critical path tasks directly impact project completion date.
+
+**Q: How do we handle delays?**
+A: - Identify cause of delay
+- Assess impact on timeline
+- Implement corrective actions
+- Compress schedule if needed
+- Communicate to stakeholders
+- Update project baseline
+
+### Resource Management
+
+**Q: How do we allocate resources?**
+A: Resource allocation involves:
+1. Identify required skills and roles
+2. Assess team member availability
+3. Assign people to tasks
+4. Track utilization rates
+5. Balance workload
+6. Document assignments
+
+**Q: What is resource leveling?**
+A: Resource leveling is adjusting the project schedule to resolve resource conflicts. It ensures:
+- No team member is over-allocated
+- Required expertise is available when needed
+- Utilization is balanced
+- Project costs are optimized
+
+**Q: How do we manage remote team members?**
+A: Best practices include:
+- Clear communication standards
+- Regular check-ins and updates
+- Documented processes
+- Asynchronous communication options
+- Video calls for important discussions
+- Clear expectations for availability
+
+### Risk Management
+
+**Q: What is risk management?**
+A: Risk management is the process of:
+1. **Identify**: Find potential risks
+2. **Analyze**: Assess probability and impact
+3. **Plan**: Develop mitigation strategies
+4. **Monitor**: Track risks throughout project
+
+**Q: How do we create a risk register?**
+A: A risk register documents:
+- Risk description
+- Probability (High/Medium/Low)
+- Impact (High/Medium/Low)
+- Mitigation strategy
+- Owner responsible
+- Status
+
+**Q: What's the difference between risk and issue?**
+A: - **Risk**: Potential future problem that may or may not happen
+- **Issue**: Current problem that is actually occurring and needs resolution
+
+### Budget and Cost Management
+
+**Q: How should we estimate project costs?**
+A: Common estimation methods:
+- **Analogous**: Based on similar past projects
+- **Parametric**: Using statistical relationships
+- **Three-point**: Optimistic, pessimistic, most likely
+- **Bottom-up**: Sum of individual task costs
+- **Expert judgment**: Input from specialists
+
+**Q: What is a contingency reserve?**
+A: A contingency reserve (typically 5-20% of budget) is money set aside to handle:
+- Unforeseen risks
+- Changes in scope
+- Unexpected expenses
+- Market fluctuations
+
+**Q: How do we track project spending?**
+A: - Create detailed budget breakdown
+- Track actual vs. planned spending
+- Monitor burn rate
+- Identify variances early
+- Implement corrective actions
+- Report to stakeholders
+
+### Communication
+
+**Q: What should be in status reports?**
+A: Key elements:
+- Accomplishments since last report
+- Planned activities for next period
+- Issues and risks
+- Budget and schedule status
+- Metrics and KPIs
+- Action items with owners
+
+**Q: How often should we communicate?**
+A: Communication frequency depends on:
+- Project phase (more frequent early on)
+- Team location (remote needs more frequent)
+- Project complexity (complex needs more touch points)
+- Stakeholder preferences
+- Risk level
+
+Standard: Weekly team updates, bi-weekly stakeholder updates
+
+**Q: What's the best project communication tool?**
+A: Consider:
+- **Email**: Formal documentation
+- **Slack/Teams**: Quick updates, questions
+- **Meetings**: Complex discussions
+- **Shared drive**: Document storage
+- **Project management software**: Central hub
+- **Dashboards**: Real-time visibility
+
+### Quality Management
+
+**Q: How do we ensure project quality?**
+A: Quality management includes:
+- Define quality standards
+- Plan quality assurance activities
+- Perform quality checks
+- Document defects
+- Implement corrections
+- Continuous improvement
+
+**Q: What is scope creep and how do we prevent it?**
+A: Scope creep is uncontrolled expansion of project scope. Prevention:
+- Clear, documented scope statement
+- Formal change control process
+- Regular scope reviews
+- Stakeholder alignment
+- Document all change requests
+- Assess impact before approval
+
+**Q: What's the difference between QA and QC?**
+A: - **QA (Quality Assurance)**: Process-oriented, prevents defects
+- **QC (Quality Control)**: Product-oriented, detects defects
+
+### Team Management
+
+**Q: How do we build an effective project team?**
+A: Key steps:
+1. Recruit people with right skills
+2. Establish clear roles and responsibilities
+3. Set team working agreements
+4. Foster collaboration
+5. Recognize and reward contributions
+6. Invest in team development
+
+**Q: How should we handle team conflicts?**
+A: Resolution approach:
+1. Address early, don't let escalate
+2. Listen to all perspectives
+3. Focus on interests, not positions
+4. Collaborate on solutions
+5. Document agreements
+6. Follow up on resolution
+
+**Q: What are signs of a healthy project team?**
+A: - Clear communication
+- Shared goals
+- Mutual respect
+- High accountability
+- Continuous learning
+- Collaborative problem-solving
+- Low turnover
+
+### Tools and Technology
+
+**Q: What project management tools should we use?**
+A: Popular options:
+- **Asana**: Flexible, good for teams
+- **Jira**: Best for software development
+- **Monday.com**: Visual, user-friendly
+- **Smartsheet**: Enterprise-grade
+- **MS Project**: Traditional, comprehensive
+- **Linear**: Lightweight, modern
+
+**Q: What makes a good project dashboard?**
+A: Essential elements:
+- Schedule status (% complete, days remaining)
+- Budget status (spent vs. planned)
+- Risk summary (active risks, trends)
+- Quality metrics (defects, testing progress)
+- Resource utilization
+- Key milestones and upcoming dates
+
+### Closing and Lessons Learned
+
+**Q: What should be in project closeout?**
+A: Closeout activities:
+- Complete all deliverables
+- Verify acceptance criteria met
+- Close out contracts
+- Release resources
+- Archive project documents
+- Conduct lessons learned
+- Celebrate team success
+
+**Q: What are lessons learned?**
+A: Lessons learned document:
+- What went well
+- What could be improved
+- Unexpected challenges and solutions
+- Best practices discovered
+- Recommendations for future projects
+- Root causes of issues
+
+**Q: How do we measure project success?**
+A: Key success metrics:
+- Delivered on time
+- Within budget
+- Met quality standards
+- Satisfied stakeholders
+- Team satisfaction
+- Business value delivered
+- Knowledge transferred
+
+## Contact Information
+
+For additional project management support:
+- Project Management Office (PMO): pmo@company.com
+- Training: training@company.com
+- Tools Support: tools-support@company.com
+- PM Community: pm-community@company.com
+
+## Useful References
+
+- PMBOK (Project Management Body of Knowledge)
+- Agile Project Management Guide
+- Prince2 Methodology
+- Lean Project Management
+- Six Sigma for Projects

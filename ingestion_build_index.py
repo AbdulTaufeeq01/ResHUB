@@ -35,13 +35,21 @@ def load_documents() -> List:
             loader=PyPDFLoader(str(path))
             # if the files is in pdf format then it uses the PyPDFLoader to load the document and the PyPDFLoader expects the input as a string so str(path) converts the path into string.
         elif fname.lower().endswith(".txt") or fname.lower().endswith(".md"):
-            loader=TextLoader(str(path))
+            loader=TextLoader(str(path), encoding='utf-8')
             # if the files is in text or markdown format then it uses the TextLoader to load the document and the TextLoader expects the input as a string so str(path) converts the path into string.
         else:
             print(f"skipping {path} as it is not a supported file format.")
             continue
             # if the file is not in pdf or text or md format then it skips that file and continues to the next file.
-        docs.extend(loader.load())
+        try:
+            loaded_docs = loader.load()
+            if loaded_docs:
+                docs.extend(loaded_docs)
+                print(f"✓ loaded {fname}: {len(loaded_docs)} pages/chunks")
+            else:
+                print(f"⚠ {fname} loaded but is empty")
+        except Exception as e:
+            print(f"✗ ERROR loading {fname}: {str(e)}")
         """
         loader.load() loads and reads the document and returns a list of document objects
         for pdf - one document object for each page
@@ -95,7 +103,7 @@ def build_index():
 
     vectordb=Chroma.from_documents(
         documents=chunks,
-        embedding_function=embeddings,
+        embedding=embeddings,
         persist_directory=str(CHROMA_DB_DIR)
     )
     """

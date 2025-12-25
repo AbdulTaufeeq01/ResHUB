@@ -1,0 +1,227 @@
+# Company Employee Handbook
+
+## Welcome to TechCorp
+
+TechCorp is a leading software development company established in 2015, specializing in cloud solutions, AI integration, and enterprise software development. We pride ourselves on innovation, employee well-being, and delivering cutting-edge technology solutions to our clients.
+
+## About TechCorp
+
+**Headquarters**: San Francisco, California
+**Founded**: 2015
+**Employees**: 500+
+**Specializations**: Cloud Computing, Machine Learning, Enterprise Software
+
+### Our Mission
+To empower businesses through innovative technology solutions that drive growth and transformation.
+
+### Our Values
+- Innovation: We embrace new ideas and continuous improvement
+- Integrity: We conduct business ethically and transparently
+- Collaboration: We work together to achieve common goals
+- Excellence: We strive for the highest quality in everything we do
+- Customer Focus: We put our clients' needs first
+
+## Work Hours and Flexibility
+
+### Standard Hours
+- Standard work week: Monday to Friday, 9 AM to 5 PM
+- Lunch break: 1 hour (flexible timing)
+- Core hours: 10 AM to 3 PM (when most team members are expected to be present)
+
+### Flexible Work Arrangements
+- Remote work: Allowed up to 3 days per week
+- Flexible hours: With manager approval, 7 AM to 7 PM window
+- Compressed week: 4 days, 10 hours per day (requires approval)
+
+## Vacation and Time Off
+
+### Paid Time Off
+- New employees (0-2 years): 15 days per year
+- Experienced employees (2-5 years): 20 days per year
+- Senior employees (5+ years): 25 days per year
+- All employees receive 10 company holidays per year
+
+### Sick Leave
+- 10 days per year for personal illness or medical appointments
+- Additional days for family care (up to 5 days per year)
+
+### Parental Leave
+- 12 weeks paid parental leave for primary caregiver
+- 4 weeks paid parental leave for secondary caregiver
+- Job protection and benefits continuation during leave
+
+## Compensation and Benefits
+
+### Salary Review Process
+- Annual reviews in March
+- Performance-based adjustments (0-6% range)
+- Merit increases based on role expansion and contributions
+- Market-rate adjustments every 2 years
+
+### Health Benefits
+- Medical insurance (80% company-paid)
+- Dental insurance (85% company-paid)
+- Vision insurance (75% company-paid)
+- Mental health support and counseling services
+- Gym membership reimbursement ($50/month)
+
+### Retirement Plans
+- 401(k) with 4% company match
+- Company-sponsored ESOP (Employee Stock Ownership Plan)
+- Vesting period: 4 years with 1-year cliff
+
+### Other Benefits
+- Life insurance: 2x annual salary (company-paid)
+- Disability insurance: 60% of salary (company-paid)
+- Commuter benefits: $150/month pre-tax
+- Parental leave: As detailed above
+
+## Professional Development
+
+### Training Budget
+- Annual training budget: $2,000 per employee
+- Covers certifications, courses, conferences, workshops
+- Manager approval required for expenses over $500
+
+### Career Development Program
+- Annual career development planning sessions
+- Mentorship program pairing senior and junior employees
+- Leadership development programs for high-potential employees
+- Tuition reimbursement: up to $5,000 per year for job-related degrees
+
+### Conference Attendance
+- Company sponsors 1-2 industry conferences per year per employee
+- All-expense covered (registration, travel, accommodation)
+- Internal knowledge sharing sessions upon return
+
+## Office Policies
+
+### Dress Code
+- Business casual Monday-Thursday
+- Casual Friday (jeans acceptable)
+- Client meetings: Business attire recommended
+- Engineering teams: Casual (jeans and TechCorp branded apparel)
+
+### Equipment and Technology
+- Laptop: Company-provided, refreshed every 3 years
+- Monitor: Dual monitors for development roles
+- Phone: Company phone or phone stipend ($50/month)
+- Software licenses: Provided for job-related tools
+
+### Office Amenities
+- Free coffee and tea
+- Snack room stocked daily
+- Gym facilities on 3rd floor
+- Collaboration spaces and meeting rooms
+- Rooftop garden area
+
+## Performance Management
+
+### Annual Performance Review
+- Self-assessment required
+- Manager rating on 5-point scale
+- 360-degree feedback from peers and team members
+- Performance improvement plans (PIP) for underperformance
+- Review cycle: January-March
+
+### Goals and Objectives
+- OKR (Objectives and Key Results) framework
+- Quarterly goal setting and mid-year check-ins
+- Manager-employee regular one-on-ones
+- Performance metrics tracked in HubSpot
+
+## Code of Conduct
+
+### Expected Behavior
+- Treat all employees with respect and dignity
+- Maintain professional communication
+- Arrive on time to meetings
+- Complete assigned work by deadlines
+- Report safety hazards immediately
+
+### Prohibited Conduct
+- Discrimination or harassment
+- Misuse of company equipment
+- Sharing confidential information
+- Conflict of interest without disclosure
+- Substance abuse at work
+
+### Social Media Policy
+- Represent the company professionally online
+- Do not share company secrets or client information
+- Include disclaimer when discussing work matters
+- Company social media accounts managed by Marketing only
+
+## Data Security and Confidentiality
+
+### Confidential Information
+- All client data is confidential and proprietary
+- Non-disclosure agreements (NDA) required for all employees
+- Violation can result in legal action and termination
+- Confidentiality obligations extend 2 years after employment
+
+### Password Policy
+- Minimum 12 characters with mixed case and numbers
+- Changed every 90 days
+- Never share passwords with colleagues
+- Two-factor authentication required for all accounts
+
+### Data Access Controls
+- Access only to systems required for your role
+- Encryption required for all data transfers
+- VPN required for remote work
+- Regular security training mandatory
+
+## Remote Work Guidelines
+
+### Equipment at Home
+- Company-provided laptop must be used
+- Secure internet connection required
+- Separate workspace preferred
+- Company provides desk/chair stipend up to $500
+
+### Communication
+- Respond to messages within 2 business hours
+- Maintain regular check-ins with manager
+- Join all scheduled meetings
+- Slack status should reflect availability
+
+### Work Environment
+- Quiet, professional background for video calls
+- No confidential information displayed visibly
+- Secure documents after use
+- Regular breaks recommended
+
+## Termination and Separation
+
+### Notice Period
+- Employees: 2 weeks notice
+- Managers: 4 weeks notice
+- Directors: 6 weeks notice
+- Company may ask for immediate departure
+
+### Final Paycheck
+- Includes accrued PTO payout
+- Processed within 5 business days
+- COBRA benefits information provided
+- Reference letters available upon request
+
+## Complaints and Grievances
+
+### Reporting Channels
+1. Direct manager (preferred first step)
+2. HR department
+3. Anonymous hotline: 1-800-TECHCORP-1
+4. Executive leadership
+
+### Investigation Process
+- Confidentiality maintained throughout
+- No retaliation for good-faith complaints
+- Investigation typically completed within 30 days
+- Follow-up meeting with complainant
+
+## Amendments
+
+This handbook is subject to change at management's discretion. All updates will be communicated via email. Current version: 2.0, Updated January 2024.
+
+For questions, contact HR at hr@techcorp.com or extension 5555.
