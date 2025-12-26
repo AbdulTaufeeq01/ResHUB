@@ -1,4 +1,4 @@
-# Research Assistant 🤖
+# Research Assistant
 
 ## What This Project Does
 

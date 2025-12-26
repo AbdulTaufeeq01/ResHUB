@@ -45,11 +45,11 @@ def load_documents() -> List:
             loaded_docs = loader.load()
             if loaded_docs:
                 docs.extend(loaded_docs)
-                print(f"✓ loaded {fname}: {len(loaded_docs)} pages/chunks")
+                print(f"Loaded {fname}: {len(loaded_docs)} pages/chunks")
             else:
-                print(f"⚠ {fname} loaded but is empty")
+                print(f"Warning: {fname} loaded but is empty")
         except Exception as e:
-            print(f"✗ ERROR loading {fname}: {str(e)}")
+            print(f"ERROR loading {fname}: {str(e)}")
         """
         loader.load() loads and reads the document and returns a list of document objects
         for pdf - one document object for each page

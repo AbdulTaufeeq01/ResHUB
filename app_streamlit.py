@@ -1,5 +1,6 @@
 import streamlit as st
 import os
+import time
 from pathlib import Path
 from typing import Optional
 
@@ -40,7 +41,7 @@ def load_qa_chain():
 
 def page_ingestion():
     """Document ingestion page"""
-    st.title("📄 Document Ingestion")
+    st.title(" Document Ingestion")
     
     st.markdown("""
     Upload PDF, TXT, or Markdown files to build your knowledge base.
@@ -48,7 +49,7 @@ def page_ingestion():
     """)
     
     # Display current data directory
-    st.info(f"📁 Documents Directory: {DATA_DIR}")
+    st.info(f"Documents Directory: {DATA_DIR}")
     
     # Show existing documents
     if DATA_DIR.exists():
@@ -56,7 +57,7 @@ def page_ingestion():
         if files:
             st.subheader("Existing Documents")
             for file in files:
-                st.write(f"✓ {file.name}")
+                st.write(f"{file.name}")
         else:
             st.warning("No documents found in the data directory")
     
@@ -75,15 +76,15 @@ def page_ingestion():
             file_path = DATA_DIR / uploaded_file.name
             with open(file_path, "wb") as f:
                 f.write(uploaded_file.getbuffer())
-            st.success(f"✓ Uploaded: {uploaded_file.name}")
+            st.success(f"Uploaded: {uploaded_file.name}")
     
     # Build index button
     st.subheader("Build Index")
-    if st.button("🔨 Build Vector Index", use_container_width=True):
+    if st.button("Build Vector Index", use_container_width=True):
         with st.spinner("Building index... This may take a few moments"):
             try:
                 build_index()
-                st.success("✓ Index built successfully!")
+                st.success("Index built successfully!")
                 st.session_state.vectordb_loaded = False  # Reset to reload
             except Exception as e:
                 st.error(f"Error building index: {e}")
@@ -91,7 +92,7 @@ def page_ingestion():
 
 def page_rag_qa():
     """RAG Question Answering page"""
-    st.title("❓ Question Answering")
+    st.title("Question Answering")
     
     st.markdown("""
     Ask questions about your documents. The system will retrieve relevant 
@@ -100,7 +101,7 @@ def page_rag_qa():
     
     # Check if vector database exists
     if not CHROMA_DB_DIR.exists():
-        st.warning("⚠️ No vector database found. Please upload documents and build the index first.")
+        st.warning("No vector database found. Please upload documents and build the index first.")
         return
     
     # Load QA chain
@@ -113,11 +114,13 @@ def page_rag_qa():
         placeholder="What are the main topics covered in the documents?"
     )
     
-    if query and st.button("🔍 Get Answer", use_container_width=True):
+    if query and st.button("Get Answer", use_container_width=True):
         with st.spinner("Searching and generating answer..."):
             try:
-                # Get answer from QA chain
+                # Get answer from QA chain with latency measurement
+                start_time = time.time()
                 answer = st.session_state.qa_chain.invoke(query)
+                latency = time.time() - start_time
                 
                 # Get source documents
                 vectordb = get_vectordb()
@@ -131,6 +134,9 @@ def page_rag_qa():
                 st.subheader("Answer")
                 st.write(answer)
                 
+                # Display response time
+                st.caption(f"Response time: {latency:.2f} seconds")
+                
                 # Display sources
                 st.subheader("Source Documents")
                 for i, doc in enumerate(source_docs, 1):
@@ -140,7 +146,8 @@ def page_rag_qa():
                 # Add to conversation history
                 st.session_state.conversation_history.append({
                     "query": query,
-                    "answer": answer
+                    "answer": answer,
+                    "latency": latency
                 })
                 
             except Exception as e:
@@ -153,11 +160,13 @@ def page_rag_qa():
             with st.expander(f"Q{i}: {exchange['query'][:50]}..."):
                 st.write(f"**Q:** {exchange['query']}")
                 st.write(f"**A:** {exchange['answer']}")
+                if "latency" in exchange:
+                    st.caption(f"Response time: {exchange['latency']:.2f} seconds")
 
 
 def page_multi_agent():
     """Multi-Agent Research page"""
-    st.title("🤖 Multi-Agent Research Assistant")
+    st.title("Multi-Agent Research Assistant")
     
     st.markdown("""
     This page uses a multi-agent system that:
@@ -168,7 +177,7 @@ def page_multi_agent():
     
     # Check if vector database exists
     if not CHROMA_DB_DIR.exists():
-        st.warning("⚠️ No vector database found. Please upload documents and build the index first.")
+        st.warning("No vector database found. Please upload documents and build the index first.")
         return
     
     # Research query input
@@ -178,7 +187,7 @@ def page_multi_agent():
         height=100
     )
     
-    if research_query and st.button("🔬 Run Research", use_container_width=True):
+    if research_query and st.button("Run Research", use_container_width=True):
         with st.spinner("Running multi-agent research... This may take a moment"):
             try:
                 result = run_research_assistant(research_query)
@@ -210,17 +219,16 @@ def main():
     """Main app"""
     st.set_page_config(
         page_title="Research Assistant",
-        page_icon="📚",
         layout="wide",
         initial_sidebar_state="expanded"
     )
     
-    st.sidebar.title("📚 Research Assistant")
+    st.sidebar.title("Research Assistant")
     
     # Navigation
     page = st.sidebar.radio(
         "Select Mode:",
-        options=["📄 Ingestion", "❓ RAG QA", "🤖 Multi-Agent Research"],
+        options=["Ingestion", "RAG QA", "Multi-Agent Research"],
         key="page_radio"
     )
     
@@ -228,11 +236,11 @@ def main():
     initialize_session_state()
     
     # Render selected page
-    if page == "📄 Ingestion":
+    if page == "Ingestion":
         page_ingestion()
     elif page == "❓ RAG QA":
         page_rag_qa()
-    elif page == "🤖 Multi-Agent Research":
+    elif page == "Multi-Agent Research":
         page_multi_agent()
     
     # Sidebar info
@@ -240,12 +248,12 @@ def main():
     st.sidebar.markdown("""
     ### About
     This is a research assistant powered by:
-    - 🤗 HuggingFace Embeddings
-    - 🔗 LangChain
-    - 🦙 Ollama LLM
-    - 🗄️ Chroma Vector DB
-    - 📊 LangGraph Multi-Agent
-    - 🎨 Streamlit UI
+    - HuggingFace Embeddings
+    - LangChain
+    - Ollama LLM
+    - Chroma Vector DB
+    - LangGraph Multi-Agent
+    - Streamlit UI
     """)
 
 
