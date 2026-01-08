@@ -238,7 +238,7 @@ def main():
     # Render selected page
     if page == "Ingestion":
         page_ingestion()
-    elif page == "❓ RAG QA":
+    elif page == "RAG QA":
         page_rag_qa()
     elif page == "Multi-Agent Research":
         page_multi_agent()

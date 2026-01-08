@@ -134,13 +134,3 @@ if __name__=="__main__":
     for doc in source_docs:
         source = doc.metadata.get('source', 'Unknown')
         print("-", source, "| snippet:", doc.page_content[:100])
-
-def answer_question(query):
-    start = time.time()
-
-    docs = retriever.get_relevant_documents(query)
-    response = llm_chain.run(input_documents=docs, question=query)
-
-    latency = time.time() - start
-
-    return response, latency
